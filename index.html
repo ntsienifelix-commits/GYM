@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRONCORE GYM | Transform Your Body</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader"><div id="lottie-animation"></div></div>
+
+<button id="backTop" class="btn btn-danger rounded-circle"><i class="bi bi-arrow-up"></i></button>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-lightning-charge-fill text-danger"></i> IRONCORE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#classes">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipment">Equipment</a></li>
+        <li class="nav-item"><a class="nav-link" href="#attire">Attire</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#transformations">Results</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center ms-3">
+        <i class="bi bi-moon-fill theme-toggle me-3" id="themeToggle"></i>
+        <div class="color-dots me-3">
+          <span class="color-dot active" data-color="#dc3545"></span>
+          <span class="color-dot" data-color="#28a745"></span>
+          <span class="color-dot" data-color="#ffc107"></span>
+        </div>
+        <button class="btn btn-sm btn-outline-danger me-2" id="loginBtn">Login</button>
+        <button class="btn btn-sm btn-danger d-none" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="display-3 fw-bold mb-3"><span id="typewriter"></span></h1>
+    <p class="lead mb-4">Premium gym. Real results. Join 500+ members in Makhado.</p>
+    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#joinModal">Start Free Trial</button>
+  </div>
+</section>
+
+<section id="classes" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Popular Classes - Click card for details</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="glass-card p-0 h-100 overflow-hidden class-card-click" data-class="Power Lifting" style="cursor:pointer"><img src="power.gif" class="w-100" style="height:200px; object-fit:cover;"><div class="p-4"><h4>Power Lifting</h4><p class="text-muted small">Build max strength</p><button class="btn btn-outline-danger btn-sm w-100 book-class" data-class="Power Lifting">Book</button></div></div></div>
+      <div class="col-md-4"><div class="glass-card p-0 h-100 overflow-hidden class-card-click" data-class="Vinyasa Flow" style="cursor:pointer"><img src="flow.gif" class="w-100" style="height:200px; object-fit:cover;"><div class="p-4"><h4>Vinyasa Flow</h4><p class="text-muted small">Build flexibility</p><button class="btn btn-outline-success btn-sm w-100 book-class" data-class="Vinyasa Flow">Book</button></div></div></div>
+      <div class="col-md-4"><div class="glass-card p-0 h-100 overflow-hidden class-card-click" data-class="HIIT Blast" style="cursor:pointer"><img src="hiit.gif" class="w-100" style="height:200px; object-fit:cover;"><div class="p-4"><h4>HIIT Blast</h4><p class="text-muted small">Burn fat fast</p><button class="btn btn-outline-warning btn-sm w-100 book-class" data-class="HIIT Blast">Book</button></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="trainers" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Meet Your Trainers</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="glass-card p-4 text-center"><img src="https://i.pravatar.cc/150?img=12" class="rounded-circle mb-3" width="120" loading="lazy"><h5>Coach James</h5><p class="text-danger small">CrossFit & HIIT</p><p class="small">8 years. Former athlete.</p><button class="btn btn-sm btn-outline-danger book-trainer" data-trainer="Coach James" data-specialty="CrossFit & HIIT">Book Me</button></div></div>
+      <div class="col-md-4"><div class="glass-card p-4 text-center"><img src="https://i.pravatar.cc/150?img=33" class="rounded-circle mb-3" width="120" loading="lazy"><h5>Coach Simon.</h5><p class="text-success small">Yoga & Meditation</p><p class="small">RYT 500 certified.</p><button class="btn btn-sm btn-outline-success book-trainer" data-trainer="Sarah N." data-specialty="Yoga & Meditation">Book Me</button></div></div>
+      <div class="col-md-4"><div class="glass-card p-4 text-center"><img src="https://i.pravatar.cc/150?img=55" class="rounded-circle mb-3" width="120" loading="lazy"><h5>Coach Mike</h5><p class="text-danger small">Power Lifting</p><p class="small">National champ.</p><button class="btn btn-sm btn-outline-danger book-trainer" data-trainer="Coach Mike" data-specialty="Power Lifting">Book Me</button></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="equipment" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Gym Equipment</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-6"><div class="glass-card p-0 overflow-hidden"><img src="dumbbells.jpeg" class="w-100" style="height:150px; object-fit:cover" loading="lazy"><div class="p-3"><h6>Dumbbells</h6><p class="small text-muted">2.5kg - 50kg pairs</p></div></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-0 overflow-hidden"><img src="bells.jpg" class="w-100" style="height:150px; object-fit:cover" loading="lazy"><div class="p-3"><h6>Barbells</h6><p class="small text-muted">Olympic bars 20kg</p></div></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-0 overflow-hidden"><img src="racks.jpeg" class="w-100" style="height:150px; object-fit:cover" loading="lazy"><div class="p-3"><h6>Squat Rack</h6><p class="small text-muted">Safety pins + J-hooks</p></div></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-0 overflow-hidden"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=600" class="w-100" style="height:150px; object-fit:cover" loading="lazy"><div class="p-3"><h6>Cable Machine</h6><p class="small text-muted">Multi-station</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="attire" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Gym Attire & Tech Gear</h2>
+    <h4 class="mb-4 text-center"><i class="bi bi-gender-male text-primary"></i> Men's Collection</h4>
+    <div class="row g-4 mb-5">
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="tee.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Performance Tee</h6><span class="badge bg-primary">R249</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="shorts.jpeg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Training Shorts</h6><span class="badge bg-primary">R299</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="vest.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Sleeveless Vest</h6><span class="badge bg-primary">R199</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?q=80&w=400" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Track Pants</h6><span class="badge bg-primary">R349</span></div></div>
+    </div>
+    <h4 class="mb-4 text-center"><i class="bi bi-gender-female text-danger"></i> Women's Collection</h4>
+    <div class="row g-4 mb-5">
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="crop.png" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Sports Bra</h6><span class="badge bg-danger">R279</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="leg.jpeg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">High-Waist Leggings</h6><span class="badge bg-danger">R349</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="top.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Crop Top</h6><span class="badge bg-danger">R229</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="yoga.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Yoga Set</h6><span class="badge bg-danger">R449</span></div></div>
+    </div>
+    <h4 class="mb-4 text-center"><i class="bi bi-smartwatch text-info"></i> Tech Gear</h4>
+    <div class="row g-4">
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="watch.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Smart Watch</h6><span class="badge bg-info">R1,299</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="buds.jpeg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Wireless Earbuds</h6><span class="badge bg-info">R899</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=400" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Gym Bag</h6><span class="badge bg-info">R399</span></div></div>
+      <div class="col-md-3 col-6"><div class="glass-card p-2 text-center"><img src="bottle.jpg" class="w-100 rounded mb-2" style="height:150px; object-fit:cover" loading="lazy"><h6 class="small">Shaker Bottle</h6><span class="badge bg-info">R149</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Membership Plans</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="glass-card p-4 text-center plan-basic"><h4>Basic</h4><h2 class="mb-3">R299<span class="fs-6">/month</span></h2><ul class="list-unstyled text-start mb-4"><li><i class="bi bi-check text-success"></i> Gym Access 6AM-6PM</li><li><i class="bi bi-check text-success"></i> Basic Equipment</li><li><i class="bi bi-x text-muted"></i> Group Classes</li></ul><button class="btn btn-outline-secondary w-100" data-bs-toggle="modal" data-bs-target="#joinModal">Choose Basic</button></div></div>
+      <div class="col-md-4"><div class="glass-card p-4 text-center plan-pro"><span class="badge bg-danger mb-2">MOST POPULAR</span><h4>Pro</h4><h2 class="text-danger mb-3">R499<span class="fs-6">/month</span></h2><ul class="list-unstyled text-start mb-4"><li><i class="bi bi-check text-success"></i> 24/7 Gym Access</li><li><i class="bi bi-check text-success"></i> All Equipment</li><li><i class="bi bi-check text-success"></i> Group Classes</li></ul><button class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#joinModal">Choose Pro</button></div></div>
+      <div class="col-md-4"><div class="glass-card p-4 text-center plan-elite"><span class="badge bg-warning text-dark mb-2"><i class="bi bi-diamond-fill"></i> LUXURY</span><h4>Elite</h4><h2 class="text-warning mb-3">R799<span class="fs-6">/month</span></h2><ul class="list-unstyled text-start mb-4"><li><i class="bi bi-check text-success"></i> 24/7 Gym Access</li><li><i class="bi bi-check text-success"></i> All Equipment</li><li><i class="bi bi-check text-success"></i> All Classes</li><li><i class="bi bi-check text-success"></i> 2 PT Sessions</li><li><i class="bi bi-check text-success"></i> Free Protein Shakes</li></ul><button class="btn btn-warning text-dark w-100" data-bs-toggle="modal" data-bs-target="#joinModal">Choose Elite</button></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="transformations" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Real Member Transformations</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=28" class="rounded-circle mb-2"><h6>Linda K.</h6><div class="text-warning">★★★</div><p>-15kg in 3 months</p><span class="badge bg-success">HIIT Program</span></div></div></div>
+
+
+
+
+      <div class="col-md-4"><div class="transformation-card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600" class="w-100 rounded"><div class="overlay"><h5>JOEY T.</h5><p>+12kg muscle gain</p><span class="badge bg-danger">Power Lifting</span></div></div></div>
+      <div class="col-md-4"><div class="transformation-card"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=600" class="w-100 rounded"><div class="overlay"><h5>MELINDA N.</h5><p>Flexibility +80%</p><span class="badge bg-success">Yoga Program</span></div></div></div>
+      <div class="col-md-4"><div class="transformation-card"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=600" class="w-100 rounded"><div class="overlay"><h5>JOHN M.</h5><p>-22kg in 4 months</p><span class="badge bg-warning text-dark">HIIT Program</span></div></div></div>
+      <div class="col-md-4"><div class="transformation-card"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=600" class="w-100 rounded"><div class="overlay"><h5>TOM R.</h5><p>+8kg lean muscle</p><span class="badge bg-danger">Power Lifting</span></div></div></div>
+
+       <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=64" class="rounded-circle mb-2"><h6>Sipho D.</h6><div class="text-warning">★★★</div><small>"Hit my first 100kg bench press. Program works!"</small>class="badge bg-success">Mixed Training</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="nutrition" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Healthy Food & Drinks</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600" class="w-100 rounded mb-3" style="height:180px; object-fit:cover" loading="lazy"><h5>Protein Bowl</h5><p class="small text-muted">Chicken, rice, greens. 450 cal</p><span class="badge bg-success">R65</span></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?q=80&w=600" class="w-100 rounded mb-3" style="height:180px; object-fit:cover" loading="lazy"><h5>Protein Shake</h5><p class="small text-muted">Whey + banana</p><span class="badge bg-success">R45</span></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600" class="w-100 rounded mb-3" style="height:180px; object-fit:cover" loading="lazy"><h5>Salad Box</h5><p class="small text-muted">Veggies + quinoa</p><span class="badge bg-success">R55</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">What Members Say</h2>
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active"><div class="glass-card p-4 text-center mx-auto" style="max-width:600px"><img src="https://i.pravatar.cc/80?img=47" class="rounded-circle mb-3"><h5>Lerato K.</h5><div class="text-warning mb-2">★★★</div><p class="lead">"Lost 15kg in 3 months with HIIT Blast! Trainers push you but care."</p></div></div>
+        <div class="carousel-item"><div class="glass-card p-4 text-center mx-auto" style="max-width:600px"><img src="https://i.pravatar.cc/80?img=22" class="rounded-circle mb-3"><h5>Mike T.</h5><div class="text-warning mb-2">★★★</div><p class="lead">"Power Lifting coaching fixed my form. Hit 140kg squat PR!"</p></div></div>
+        <div class="carousel-item"><div class="glass-card p-4 text-center mx-auto" style="max-width:600px"><img src="https://i.pravatar.cc/80?img=33" class="rounded-circle mb-3"><h5>Sarah N.</h5><div class="text-warning mb-2">★★★</div><p class="lead">"Yoga classes reduced my anxiety. Best decision I made."</p></div></div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </div>
+</section>
+
+<section id="class-reviews" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Member Feedback by Class</h2>
+    <h4 class="mb-3"><i class="bi bi-dumbbell text-danger"></i> Power Lifting</h4>
+    <div class="row g-3 mb-5">
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=11" class="rounded-circle mb-2"><h6>Thabo M.</h6><div class="text-warning">★★★</div><small>"Went from 60kg to 140kg squat in 6 months. Coach Mike is brutal but best."</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=28" class="rounded-circle mb-2"><h6>Linda K.</h6><div class="text-warning">★★★</div><small>"Form correction changed everything. No more back pain."</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=64" class="rounded-circle mb-2"><h6>Sipho D.</h6><div class="text-warning">★★★</div><small>"Hit my first 100kg bench press. Program works!"</small></div></div>
+    </div>
+    <h4 class="mb-3"><i class="bi bi-flower1 text-success"></i> Vinyasa Flow</h4>
+    <div class="row g-3 mb-5">
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=42" class="rounded-circle mb-2"><h6>Nomsa P.</h6><div class="text-warning">★★★</div><small>"Flexibility improved 80%. Stress levels dropped."</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=25" class="rounded-circle mb-2"><h6>Juliet R.</h6><div class="text-warning">★★★</div><small>"Best yoga instructor Sarah. Calm and patient."</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=31" class="rounded-circle mb-2"><h6>Aisha L.</h6><div class="text-warning">★★★</div><small>"Morning flow classes are my therapy now."</small></div></div>
+    </div>
+    <h4 class="mb-3"><i class="bi bi-lightning-charge text-warning"></i> HIIT Blast</h4>
+    <div class="row g-3">
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=47" class="rounded-circle mb-2"><h6>Rose K.</h6><div class="text-warning">★★★</div><small>"-15kg in 3 months. Hard but addictive!"</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=53" class="rounded-circle mb-2"><h6>Zanele W.</h6><div class="text-warning">★★★</div><small>"Coach James pushes you to your limit. Results guaranteed."</small></div></div>
+      <div class="col-md-4"><div class="glass-card p-3"><img src="https://i.pravatar.cc/60?img=66" class="rounded-circle mb-2"><h6>Kabelo S.</h6><div class="text-warning">★★★</div><small>"30min workout = 2hr gym results. Love it."</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Do you have parking?</button></h2><div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Yes! Free secure parking for all members right outside the gym.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Can I freeze my membership?</button></h2><div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Yes, up to 2 months per year. Just notify us 7 days in advance.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What's the age limit?</button></h2><div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">16+ years old. Under 18 needs parental consent form.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do you offer trial sessions?</button></h2><div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted">Yes! Free 3-day trial pass. Book via the "Start Free Trial" button.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6"><div class="glass-card p-4"><h4><i class="bi bi-eye text-danger"></i> Our Vision</h4><p>To be Makhado's #1 fitness community where every member transforms their body and mindset through premium training and support.</p><h4 class="mt-4"><i class="bi bi-bullseye text-success"></i> Our Mission</h4><p>Provide world-class equipment, expert coaching, and motivation to help 1000+ locals achieve their health goals by 2027.</p></div></div>
+      <div class="col-md-6"><div class="glass-card p-4"><h4><i class="bi bi-trophy text-warning"></i> Rewards & Badges</h4><div class="d-flex flex-wrap gap-2"><span class="badge bg-danger p-2"><i class="bi bi-fire"></i> 30 Day Streak</span><span class="badge bg-success p-2"><i class="bi bi-star-fill"></i> 100 Workouts</span><span class="badge bg-warning text-dark p-2"><i class="bi bi-award-fill"></i> Top Performer</span><span class="badge bg-info p-2"><i class="bi bi-people-fill"></i> Refer 3 Friends</span></div><p class="small mt-3">Earn points for workouts. Redeem for free shakes, merch, PT sessions!</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="health-tips" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Health Tips & Advice</h2>
+    <div class="accordion" id="healthAccordion">
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#h1"><i class="bi bi-droplet-fill me-2 text-info"></i> Hydration is key</button></h2><div id="h1" class="accordion-collapse collapse show" data-bs-parent="#healthAccordion"><div class="accordion-body text-muted">Drink 2-3L water daily. Dehydration kills performance.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#h2"><i class="bi bi-moon-stars me-2 text-primary"></i> Sleep 7-8 hours</button></h2><div id="h2" class="accordion-collapse collapse" data-bs-parent="#healthAccordion"><div class="accordion-body text-muted">Muscles grow during sleep, not in gym.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg
+accordion-collapse collapse" data-bs-parent="#healthAccordion"><div class="accordion-body text-muted">Muscles grow during sleep, not in gym.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#h3"><i class="bi bi-egg-fried me-2 text-warning"></i> Protein after workout</button></h2><div id="h3" class="accordion-collapse collapse" data-bs-parent="#healthAccordion"><div class="accordion-body text-muted">30g protein within 30min for muscle repair.</div></div></div>
+      <div class="accordion-item bg-dark border-secondary"><h2 class="accordion-header"><button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#h4"><i class="bi bi-heart-pulse me-2 text-danger"></i> Warm up properly</button></h2><div id="h4" class="accordion-collapse collapse" data-bs-parent="#healthAccordion"><div class="accordion-body text-muted">5-10min cardio prevents injuries.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Visit Us</h2>
+    <div class="row">
+      <div class="col-md-6"><div class="glass-card p-4"><h4><i class="bi bi-geo-alt text-danger"></i> Address</h4><p>123 Main Street, Makhado CBD, Limpopo, 0920</p><h4 class="mt-4"><i class="bi bi-clock text-success"></i> Opening Hours</h4><p><strong>Mon-Fri:</strong> 5:00 AM - 10:00 PM<br><strong>Sat-Sun:</strong> 7:00 AM - 8:00 PM<br><strong>Public Holidays:</strong> 8:00 AM - 6:00 PM</p></div></div>
+      <div class="col-md-6"><div class="glass-card p-4 h-100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14745.123!2d29.925!3d-23.048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAyJzUyLjgiUyAyOcKwNTUnMzAuMCJF!5e0!3m2!1sen!2sza!4v1234567890" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6"><div class="glass-card p-4"><form id="contactForm"><input type="text" class="form-control mb-3" placeholder="Name" required><input type="email" class="form-control mb-3" placeholder="Email" required><textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea><button type="submit" class="btn btn-danger w-100">Send Message</button></form></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4 text-center bg-black">
+  <p class="mb-0">© FELIX 2026 IRONCORE GYM. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/27123456789" class="whatsapp-float" target="_blank"><i class="bi bi-whatsapp"></i></a>
+
+<!-- Modals -->
+<div class="modal fade" id="joinModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content bg-dark"><div class="modal-header"><h5 class="modal-title">Join IRONCORE</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><form id="joinForm"><input type="text" class="form-control mb-3" placeholder="Full Name" required><input type="email" class="form-control mb-3" placeholder="Email" required><input type="tel" class="form-control mb-3" placeholder="Phone" required><select class="form-control mb-3" id="joinPlan"><option>Basic</option><option>Pro</option><option>Elite</option></select><button type="submit" class="btn btn-danger w-100">Submit</button></form><div id="successMsg" class="alert alert-success d-none">Application submitted! We’ll call you.</div></div></div></div></div>
+
+<div class="modal fade" id="loginModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content bg-dark"><div class="modal-header"><h5 class="modal-title">Member Login</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><form id="loginForm"><input type="email" class="form-control mb-3" placeholder="Email" required><input type="password" class="form-control mb-3" placeholder="Password" required><button type="submit" class="btn btn-danger w-100">Login</button></form></div></div></div></div>
+
+<div class="modal fade" id="trainerModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content bg-dark"><div class="modal-header"><h5 class="modal-title" id="trainerModalTitle">Book Trainer</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><form id="trainerForm"><input type="text" class="form-control mb-3" placeholder="Your Name" required><input type="email" class="form-control mb-3" placeholder="Email" required><input type="date" class="form-control mb-3" required><input type="hidden" id="trainerSpecialty"><button type="submit" class="btn btn-danger w-100">Book Session</button></form><div id="trainerSuccess" class="alert alert-success d-none">Booking confirmed!</div></div></div></div></div>
+
+<div class="modal fade" id="classDetailModal" tabindex="-1"><div class="modal-dialog modal-lg"><div class="modal-content bg-dark"><div class="modal-header"><h5 class="modal-title" id="classModalTitle">Class Details</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="row mb-4" id="classGallery"></div><h6>Member Reviews:</h6><div id="classTestimonials"></div><button class="btn btn-danger mt-3 w-100" id="modalBookBtn">Book This Class</button></div></div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="java.js"></script>
+</body>
+</html>
